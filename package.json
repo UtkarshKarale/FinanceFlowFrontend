@@ -24,8 +24,14 @@
   },
   
   "scripts": {
+<<<<<<< HEAD
     
     "start": "react-scripts start",
+=======
+    "predeploy": "npm run build",
+     "deploy": "gh-pages -d build --repo https://github.com/Utkarsh3696/FinanceFlow-_Frontend.git",
+    "start": "PORT=3001 react-scripts start",
+>>>>>>> 469b23dd08397abb8f21c50bbbffbf87e4c8eeb4
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

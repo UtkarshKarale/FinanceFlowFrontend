@@ -21,7 +21,7 @@ View detailed summaries of financial activities.
 Edit and update financial records.
 Access a user-friendly interface built with modern technologies like React and Redux.
 The application provides a seamless experience across different devices, ensuring that you can manage your finances anywhere, anytime.
-## Author Ifo
+## Author Info
 
 - [@Utkarsh Karale - github](https://www.github.com/utkarsh3696)
 - [@Utkarsh Karale - linkedIn](https://www.linkedin.com/in/utkarshkarale/)

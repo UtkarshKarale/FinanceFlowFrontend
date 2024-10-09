@@ -22,10 +22,9 @@
     "redux-persist": "^6.0.0",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://github.com/Utkarsh3696/FinanceFlow-_Frontend.git",
+  
   "scripts": {
-    "predeploy": "npm run build",
-     "deploy": "gh-pages -d build --repo https://github.com/Utkarsh3696/FinanceFlow-_Frontend.git",
+    
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -20,7 +20,7 @@ import UpdateLent from './Components/UpdateLent'
 
 const App = () => {
   return (
-    <BrowserRouter basename='FinanceFlow-_Frontend'>
+    <BrowserRouter>
     <Routes>
         
         <Route path='/' element={<Login/>} />

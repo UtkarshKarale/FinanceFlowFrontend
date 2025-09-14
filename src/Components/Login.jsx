@@ -23,7 +23,7 @@ const Login = () => {
         console.log(email, password);
         let loginobject = { email, password };
         try {
-            let res = await axios.post('https://financeflow-production.up.railway.app/user/login', loginobject);
+            let res = await axios.post('https://studied-territory-longest-mold.trycloudflare.com/ffb/user/login', loginobject);
             console.log(res.data);
             dispatch(login(res.data.data))
             alert(`${res.data.message}`)

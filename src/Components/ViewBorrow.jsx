@@ -41,7 +41,7 @@ const ViewBorrow = () => {
      const  deletehandle= async (id)=>{
         try{
             
-            let res = await axios.delete(`https://financeflow-production.up.railway.app/borrow?uid=${user.id}&bid=${id}`);
+            let res = await axios.delete(`https://studied-territory-longest-mold.trycloudflare.com/ffb/borrow?uid=${user.id}&bid=${id}`);
             dispatch(login(res.data.data))
             setFilterborrowlist(res.data.data.borrowslist)
             alert(res.data.message)

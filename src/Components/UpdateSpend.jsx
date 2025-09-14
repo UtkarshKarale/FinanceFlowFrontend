@@ -22,7 +22,7 @@ const UpdateSpend = () => {
             } 
         const fetchIncome = async () => {
             try {
-                let resp = await axios.get(`https://financeflow-production.up.railway.app/spend?sid=${id}`);
+                let resp = await axios.get(`https://studied-territory-longest-mold.trycloudflare.com/ffb/spend?sid=${id}`);
                 let inco = resp.data.data;
                 
                 if (inco) {
@@ -48,7 +48,7 @@ const UpdateSpend = () => {
             date: date.toISOString() 
         };
 
-            let res1 = await axios.patch(`https://financeflow-production.up.railway.app/spend?uid=${user?.id}&sid=${id}`, object);
+            let res1 = await axios.patch(`https://studied-territory-longest-mold.trycloudflare.com/ffb/spend?uid=${user?.id}&sid=${id}`, object);
             console.log(res1.data.data);
             dispatch(login(res1.data.data));
             alert(res1.data.message); 

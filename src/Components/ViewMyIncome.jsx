@@ -29,7 +29,7 @@ const ViewMyIncome = () => {
     };
      const  deletehandle= async (id)=>{
         try{
-            let res = await axios.delete(`https://financeflow-production.up.railway.app/income?uid=${user.id}&iid=${id}`);
+            let res = await axios.delete(`https://studied-territory-longest-mold.trycloudflare.com/ffb/income?uid=${user.id}&iid=${id}`);
             dispatch(login(res.data.data))
             alert(res.data.message)
             setFilterIncomeList(res.data.data.incomeslist)

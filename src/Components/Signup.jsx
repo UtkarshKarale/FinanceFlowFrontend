@@ -25,7 +25,7 @@ const Signup = () => {
             setLoadingWarn(false)
         const signupObject = { email, password: confirmpass, name, mobile };
         try {
-            const res = await axios.post('https://financeflow-production.up.railway.app/users', signupObject);
+            const res = await axios.post('https://studied-territory-longest-mold.trycloudflare.com/ffb/users', signupObject);
             if (res.data && res.data.statusCode === 201) {
                 alert("SignUp successfully!");
                 navigate(`/`);

@@ -47,7 +47,7 @@ const UpdateLent = () => {
         toUser
     };
     try {
-       let res = await axios.patch(`https://financeflow-production.up.railway.app/lents?uid=${user?.id}&lid=${id}`,object)
+       let res = await axios.patch(`https://studied-territory-longest-mold.trycloudflare.com/ffb/lents?uid=${user?.id}&lid=${id}`,object)
         console.log(res.data.data);
         dispatch(login(res.data.data))
         alert("data is updated")

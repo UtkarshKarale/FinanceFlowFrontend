@@ -25,9 +25,9 @@ const AddBorrow = () => {
         from_user
     };
     try {
-        let res = await axios.post("https://financeflow-production.up.railway.app/borrow", object);
+        let res = await axios.post("https://studied-territory-longest-mold.trycloudflare.com/ffb/borrow", object);
         console.log(res.data.data.id);
-        let res1 = await axios.patch(`https://financeflow-production.up.railway.app/user/borrow?uid=${id}&bid=${res.data.data.id}`, object);
+        let res1 = await axios.patch(`https://studied-territory-longest-mold.trycloudflare.com/ffb/user/borrow?uid=${id}&bid=${res.data.data.id}`, object);
         console.log(res1.data.data);
         dispatch(login(res1.data.data))
         alert("Borrow Added Successfully!!!")

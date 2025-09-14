@@ -48,7 +48,7 @@ const UpdateBorrow = () => {
         from_user
     };
     try {
-       let res = await axios.patch(`https://financeflow-production.up.railway.app/borrow?uid=${user?.id}&bid=${id}`,object)
+       let res = await axios.patch(`https://studied-territory-longest-mold.trycloudflare.com/ffb/borrow?uid=${user?.id}&bid=${id}`,object)
         console.log(res.data.data);
         dispatch(login(res.data.data))
         alert("data is updated")

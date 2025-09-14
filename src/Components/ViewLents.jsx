@@ -41,7 +41,7 @@ const ViewLents = () => {
    const  deletehandle= async (id)=>{
       try{
           
-          let res = await axios.delete(`https://financeflow-production.up.railway.app/lent?uid=${user.id}&lid=${id}`);
+          let res = await axios.delete(`https://studied-territory-longest-mold.trycloudflare.com/ffb/lent?uid=${user.id}&lid=${id}`);
           dispatch(login(res.data.data))
           setFilteredLentsList(res.data.data.lents)
           alert(res.data.message)

@@ -29,7 +29,7 @@ const MyProfile = () => {
             name,email,mobile
         }
         try{
-        let res = await axios.patch(`https://financeflow-production.up.railway.app/user?uid=${user?.id}`,object)
+        let res = await axios.patch(`https://studied-territory-longest-mold.trycloudflare.com/ffb/user?uid=${user?.id}`,object)
         dispatch(login(res.data.data))
         alert(res.data.message)
         }
@@ -44,7 +44,7 @@ const MyProfile = () => {
         const isConfirmed = confirm("Are you sure? You will lose all your data, which is not restorable.");
         
     if (isConfirmed) {
-        await axios.delete(`https://financeflow-production.up.railway.app/users/${user?.id}`) 
+        await axios.delete(`https://studied-territory-longest-mold.trycloudflare.com/ffb/users/${user?.id}`) 
         alert("you no longer user of FinanceFlow")
         navigate("/");
     } else {

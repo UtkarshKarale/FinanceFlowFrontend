@@ -24,9 +24,9 @@ const handlesbumit = async(e)=>{
       date
   };
   try {
-      let res = await axios.post("https://financeflow-production.up.railway.app/income", object);
+      let res = await axios.post("https://studied-territory-longest-mold.trycloudflare.com/ffb/income", object);
       console.log(res.data.data.id);
-      let res1 = await axios.patch(`https://financeflow-production.up.railway.app/users/income?uid=${id}&iid=${res.data.data.id}`, object);
+      let res1 = await axios.patch(`https://studied-territory-longest-mold.trycloudflare.com/ffb/users/income?uid=${id}&iid=${res.data.data.id}`, object);
       console.log(res1.data.data);
       dispatch(login(res1.data.data))
       alert("Income Added Successfully!!")

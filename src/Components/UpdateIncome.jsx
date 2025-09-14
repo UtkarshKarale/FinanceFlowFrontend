@@ -17,7 +17,7 @@ const UpdateIncome = () => {
     useEffect(() => {
         const fetchIncome = async () => {
             try {
-                let resp = await axios.get(`https://financeflow-production.up.railway.app/income?iid=${id}`);
+                let resp = await axios.get(`https://studied-territory-longest-mold.trycloudflare.com/ffb/income?iid=${id}`);
                 let inco = resp.data.data;
                
                 // Ensure income is fetched before setting state
@@ -42,7 +42,7 @@ const UpdateIncome = () => {
             date
         };
         try {
-            let res1 = await axios.patch(`https://financeflow-production.up.railway.app/income?uid=${user.id}&iid=${id}`, object);
+            let res1 = await axios.patch(`https://studied-territory-longest-mold.trycloudflare.com/ffb/income?uid=${user.id}&iid=${id}`, object);
             dispatch(login(res1.data.data));
             alert("Income updated successfully!");
             

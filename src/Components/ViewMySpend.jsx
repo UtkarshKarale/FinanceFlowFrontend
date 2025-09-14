@@ -17,7 +17,7 @@ const ViewMySpend = () => {
 
     const handleDelete= async (id)=>{
         try{
-        let res = await axios.delete(`https://financeflow-production.up.railway.app/spend?uid=${user.id}&sid=${id}`)
+        let res = await axios.delete(`https://studied-territory-longest-mold.trycloudflare.com/ffb/spend?uid=${user.id}&sid=${id}`)
         dispatch(login(res.data.data))
         setFilterSpendList(res.data.data.spendList)
         alert(res.data.message)

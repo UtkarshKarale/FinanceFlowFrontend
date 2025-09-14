@@ -23,9 +23,9 @@ const AddSpend = () => {
             date: date.toISOString() 
         };
         try {
-            let res = await axios.post("https://financeflow-production.up.railway.app/spends", object);
+            let res = await axios.post("https://studied-territory-longest-mold.trycloudflare.com/ffb/spends", object);
             console.log(res.data.data.id);
-            let res1 = await axios.patch(`https://financeflow-production.up.railway.app/users/spend?uid=${id}&sid=${res.data.data.id}`, object);
+            let res1 = await axios.patch(`https://studied-territory-longest-mold.trycloudflare.com/ffb/users/spend?uid=${id}&sid=${res.data.data.id}`, object);
             console.log(res1.data.data);
             dispatch(login(res1.data.data))
             alert("Spend Added Successfully!!")
